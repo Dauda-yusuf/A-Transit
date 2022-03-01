@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    
+}
+
+body{
+	height: 95vh;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+}
+
+
+marquee{
+	position: relative;
+	margin: 0;
+	color: #fffbc8;
+	font-family: 'Roboto Mono', monospace;
+}
+
+marquee a {
+	color: #fffbc8;
+}
+
+
+
+
+.navbar {
+	font-family: 'Roboto Mono', monospace;
+    display: flex;
+	position: relative;
+	top: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.brand-title {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 300px;
+    font-size: 2rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+    	font-size: 12px;
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+.text{
+	position: relative;
+	z-index: 1;
+	top: 100px;
+	left: 12px;
+
+}
+
+.text h1:nth-child(1){
+	font-size: 28px;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 600;
+	color: white;
+	letter-spacing: 0.10em;
+	margin: 8px 0px;
+
+
+}
+
+.text a {
+	text-decoration: none;
+	font-size: 18px;
+	font-family:  'Roboto Mono', monospace;
+	font-weight: 600;
+	color: #fffbc8;
+	letter-spacing: 0.10em;
+	margin: 8px 0px;
+
+
+}
+
+.text p:nth-child(2){
+	font-size: 14px;
+	font-family:  'Roboto Mono', monospace;
+	word-wrap: normal;
+	font-weight: 450;
+	color: white;
+	letter-spacing: 0.090em;
+	margin: 8px 0px;
+
+
+}
+
+
+.custom-shape-divider-top-1645522961 {
+    position: relative;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1645522961 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 232px;
+}
+
+.custom-shape-divider-top-1645522961 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1645522961 svg {
+    	top: 1px;
+        width: calc(100% + 1.3px);
+        height: 200px;
+    }
+
+     .navbar-links {
+    	font-size: 18px;
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+}
+
+/*========= THE SIGN IN PAGE STYLE=========*/
+
+.signup-box {
+  width: 360px;
+  height: 620px;
+  margin: auto;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.login-box {
+  width: 360px;
+  height: 280px;
+  margin: auto;
+  border-radius: 3px;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+h4 {
+  text-align: center;
+}
+
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+input[type="button"] {
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: grey;
+  color: white;
+  font-size: 18px;
+}
+p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
+.para-2 {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  margin-top: -10px;
+}
+.para-2 a {
+  color: #49c1a2;
+}
+
+
+
+
+
+}
